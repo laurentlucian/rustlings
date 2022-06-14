@@ -8,8 +8,6 @@
 
 // Make these tests pass! Execute `rustlings hint errors6` for hints :)
 
-// I AM NOT DONE
-
 use std::num::ParseIntError;
 
 // This is a custom error type that we will be using in `parse_pos_nonzero()`.
@@ -20,7 +18,6 @@ enum ParsePosNonzeroError {
 }
 
 impl ParsePosNonzeroError {
-    // TODO: add another error conversion function here.
     fn from_creation(err: CreationError) -> ParsePosNonzeroError {
         ParsePosNonzeroError::Creation(err)
     }
